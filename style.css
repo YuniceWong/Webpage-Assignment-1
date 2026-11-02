@@ -148,10 +148,9 @@ div.nav-left li.Collection {
 }
 
 div.nav-left li.Collection ul.dropdown-menu{
-	/*background: red;*/
+	/* background: red; */
 	position: absolute;
-	left:10px;
-
+	left:-10px;
 	width: 225px;
 	margin-top:25px;
 	padding: 0;
@@ -166,6 +165,29 @@ div.nav-left li.Collection ul.dropdown-menu{
 
 button.collection-dropdown span {
  display:inline-block;
+}
+
+div.nav-left li.Collection ul.dropdown-menu {
+    margin-top: 5px ; 
+    padding-top: 15px ; 
+    padding-bottom: 15px ;
+    padding-left: 0 ;
+    padding-right: 0 ; 
+}
+
+div.nav-left li.Collection ul.dropdown-menu li {
+    display: block ;
+    text-align: center ;
+    margin: 8px 0 ;     
+}
+
+
+div.nav-left li.Collection ul.dropdown-menu a {
+    display: inline-block ;
+    width: 200px ;       
+    padding: 10px 0 ;    
+    text-align: center ;  
+    box-sizing: border-box ;
 }
 
 /*Video*/
@@ -522,6 +544,7 @@ video{
   position: relative;
   min-height: 695px;
   overflow: hidden;
+  background:;
   color:var(--black);
   text-align: center;
   padding: 6px 40px 30px;
@@ -718,7 +741,7 @@ video{
   .coords p {
     font-size: 36px;
   }
-
+}
 
 .about-layout {
   min-height: 100vh;
@@ -1164,7 +1187,7 @@ li.Collection ul.dropdown-menu li{
 	margin-bottom: 25px;
 }
 
-
+/
 /* ===== CENTER WRAPPER ===== */
 .cart-wrapper {
     max-width: 1000px;
@@ -1361,7 +1384,6 @@ div.productmen th{
 
 div.productmen h2{
   position:absolute;
-  top:190%;
   top:210%;
   left:17%;
   transform:translate(-50%,-50%);
@@ -1371,7 +1393,6 @@ div.productmen h2{
 
 div.productmen h3{
   position:absolute;
-  top:200%;
   top:220%;
   left:19%;
   transform:translate(-50%,-50%);
