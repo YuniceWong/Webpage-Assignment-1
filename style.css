@@ -1424,7 +1424,7 @@ div.productwomen th{
 
 .hero-text-women{
   position:absolute;
-  top:200%;
+  top:190%;
   left:45%;
   color:var(--black);
   font-size:80px;
@@ -1436,7 +1436,7 @@ div.productwomen th{
 
 div.productwomen h2{
   position:absolute;
-  top:230%;
+  top:210%;
   left:16%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
@@ -1445,7 +1445,7 @@ div.productwomen h2{
 
 div.productwomen h3{
   position:absolute;
-  top:235%;
+  top:220%;
   left:18%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
