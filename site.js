@@ -16,23 +16,23 @@ $(document).ready(function(){//when document is ready(fully loaded), run functio
 
 
   $('div.america').hover(function(){
-    $('.america-img').attr('src','img/americanhover.png');
+    $('.america-img').attr('src','img/Americanhover.png');
   },function(){
-    $('.america-img').attr('src','img/american.png');
+    $('.america-img').attr('src','img/American.png');
   });
 });
 
  $('div.england').hover(function(){
-    $('.england-img').attr('src','img/englandhover.png');
+    $('.england-img').attr('src','img/Englandhover.png');
   },function(){
-    $('.england-img').attr('src','img/england.png');
+    $('.england-img').attr('src','img/England.png');
   });
 
 
  $('div.france').hover(function(){
-    $('.france-img').attr('src','img/frenchhover.png');
+    $('.france-img').attr('src','img/Frenchhover.png');
   },function(){
-    $('.france-img').attr('src','img/french.png');
+    $('.france-img').attr('src','img/French.png');
   });
 
 
