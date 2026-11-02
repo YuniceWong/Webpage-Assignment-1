@@ -1350,8 +1350,8 @@ div.productmen th{
 
 .hero-text-men{
   position:absolute;
-  top:215%;
-  right:51%;
+  top:190%;
+  right:52%;
   color:var(--lightbeige);
   font-size:80px;
   line-height:1.3;
@@ -1362,7 +1362,7 @@ div.productmen th{
 
 div.productmen h2{
   position:absolute;
-  top:246%;
+  top:190%;
   left:17%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
@@ -1371,7 +1371,7 @@ div.productmen h2{
 
 div.productmen h3{
   position:absolute;
-  top:252%;
+  top:200%;
   left:19%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
