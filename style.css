@@ -1362,7 +1362,7 @@ div.productmen th{
 
 div.productmen h2{
   position:absolute;
-  top:220%;
+  top:150%;
   left:17%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
@@ -1371,7 +1371,7 @@ div.productmen h2{
 
 div.productmen h3{
   position:absolute;
-  top:230%;
+  top:165%;
   left:19%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
