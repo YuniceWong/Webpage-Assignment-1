@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jacquemus-Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+</head> 
+<body>
+
+    <div class="header-container"> 
+
+        <div>
+            <div class="icon-left">
+                <a href="index.html">
+                    <img class="home" src="img/home.png"></a>
+                <a href="user.html">
+                    <img class="user" src="img/user.png"></a>
+            </div>
+            <div class="nav-left">
+               <ul>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="collections.html">Collections</a></li> -->
+                <li class="Collection">
+                    <button class="collection-dropdown">Collections<span>&#9654;</span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="productwomen.html">WOMEN</a></li>
+                        <li><a href="productmen.html">MEN</a></li> 
+                    </ul>
+                </li>
+               </ul>
+            </div>
+
+        </div>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/Jacquemus-Logo.png"></a>
+        </div>
+
+        <div>
+            <div class="icon-right">
+               <a href="favorites.html">
+                <img class="star" src="img/star.png"></a>
+               <a href="cart.html">
+                <img class="cart" src="img/shopping-cart.png"></a>
+           </div>
+           
+           <div class="nav-right">
+            <ul>
+            <li><a href="stores.html">Our Stores</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+</div>
+
+   <!-- PRODUCT 1 -->
+<div class="cart-card">
+
+    <img src="img/bag1.png">
+
+    <div class="info">
+
+        <h2>The Valérie Bag</h2>
+
+        <p class="price">
+            RM <span id="price1">8000</span>
+        </p>
+        
+        <div class="qty-box">
+            <button id="minus1">−</button>
+
+            <span id="qty1">1</span>
+
+            <button id="plus1">+</button>
+        </div>
+    </div>
+
+    <button id="remove1" class="remove">
+        Remove
+    </button>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="cart-card">
+
+    <img src="img/bag2.png">
+
+    <div class="info">
+
+        <h2>The Valérie Bag</h2>
+
+        <p class="price">
+            RM <span id="price2">8000</span>
+        </p>
+
+        <div class="qty-box">
+            <button id="minus2">−</button>
+            <span id="qty2">1</span>
+            <button id="plus2">+</button>
+        </div>
+    </div>
+    <button id="remove2" class="remove">
+        Remove
+    </button>
+</div>
+
+<div class="summary">
+    <div>
+        <p>Total</p>
+
+        <h2>
+            RM
+            <span id="total">
+                16000
+            </span>
+        </h2>
+    </div>
+    <button class="checkout">
+        Checkout
+    </button>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+
+
+<!-- <div class="Footer-container">
+    <div class="Social-media">
+        <img class="instagram" src="img/instagram.png">
+        <ul>
+            <li><a href="https://www.instagram.com/jacquemus/">JACQUEMUS</a></li>
+        </ul>
+        <img class="tiktok" src="img/tik-tok.png">
+        <ul>
+            <li><a href="https://www.tiktok.com/@jacquemus">JACQUEMUS</a></li>
+        </ul>
+        <img class="facebook" src="img/facebook.png">
+        <ul>
+            <li><a href="https://www.facebook.com/JACQUEMUS">JACQUEMUS</a></li>
+        </ul>
+        <img class="twitter" src="img/twitter.png">
+        <ul>
+            <li><a href="https://x.com/jacquemus">@JACQUEMUS</a></li>
+        </ul>
+    </div> -->
+
+
+    <div class="Footer-container">
+
+  <a href="https://www.instagram.com/jacquemus/" class="social">
+    <img class="instagram" src="img/instagram.png">
+    <span>JACQUEMUS</span>
+  </a>
+
+  <a href="https://www.tiktok.com/@jacquemus" class="social">
+    <img class="tiktok"  src="img/tik-tok.png">
+    <span>JACQUEMUS</span>
+  </a>
+
+  <a href="https://www.facebook.com/JACQUEMUS" class="social">
+    <img class="facebook" src="img/facebook.png">
+    <span>JACQUEMUS</span>
+  </a>
+
+  <a href="https://x.com/jacquemus" class="social">
+    <img class="twitter" src="img/twitter.png">
+    <span>@JACQUEMUS</span>
+  </a>
+</div>
+
+    <div class="Copyright">
+    <h3>All Rights Reserved @ Jacquemus</h3>
+    </div>
+    </div>
+
+
+<script>
+
+/* PRODUCT 1 */
+let count1 = 1;
+let price1 = 8000;
+
+let qty1 =
+document.getElementById("qty1");
+
+let plus1 =
+document.getElementById("plus1");
+
+let minus1 =
+document.getElementById("minus1");
+
+let remove1 =
+document.getElementById("remove1");
+
+let card1 =
+document.querySelectorAll(".cart-card")[0];
+
+
+
+/* PRODUCT 2 */
+let count2 = 1;
+let price2 = 8000;
+
+let qty2 =
+document.getElementById("qty2");
+
+let plus2 =
+document.getElementById("plus2");
+
+let minus2 =
+document.getElementById("minus2");
+
+let remove2 =
+document.getElementById("remove2");
+
+let card2 =
+document.querySelectorAll(".cart-card")[1];
+
+/* TOTAL */
+let total =
+document.getElementById("total");
+
+/* UPDATE */
+function update() {
+qty1.textContent =
+count1;
+qty2.textContent =
+count2;
+
+let grandTotal =
+(count1 * price1)
++
+(count2 * price2);
+
+total.textContent =
+grandTotal.toLocaleString();
+}
+
+/* PRODUCT 1 COUNT */
+plus1.onclick =
+function(){
+count1++;
+update();
+}
+
+minus1.onclick =
+function(){
+if(count1 > 1){
+count1--;
+update();
+}
+}
+
+
+/* PRODUCT 2 COUNT */
+plus2.onclick =
+function(){
+count2++;
+update();
+}
+
+minus2.onclick =
+function(){
+if(count2 > 1){
+count2--;
+update();
+}
+}
+
+
+/* REMOVE PRODUCT 1 */
+remove1.onclick =
+function(){
+count1 = 0;
+card1.style.display =
+"none";
+update();
+}
+
+
+/* REMOVE PRODUCT 2 */
+remove2.onclick =
+function(){
+count2 = 0;
+card2.style.display =
+"none";
+update();
+}
+
+/* INITIAL */
+update();
+</script>
+
+
+<!-- <script>
+    let qty = document.querySelector(".qty");
+let total = document.getElementById("total");
+
+let price = 2500; // price per item
+let count = 1;
+
+document.querySelector(".plus").onclick = () => {
+  count++;
+  qty.innerText = count;
+  total.innerText = count * price;
+};
+
+document.querySelector(".minus").onclick = () => {
+  if (count > 1) {
+    count--;
+    qty.innerText = count;
+    total.innerText = count * price;
+  }
+};
+</script> -->
+
+<!-- <script>
+/* ===== SELECT ELEMENTS ===== */
+let plusButton = document.querySelector(".plus");
+let minusButton = document.querySelector(".minus");
+let quantity = document.querySelector(".qty");
+let total = document.getElementById("total");
+
+/* ===== VALUES ===== */
+let itemPrice = 2500;
+let count = 1;
+
+/* ===== UPDATE FUNCTION ===== */
+function updateCart() {
+    quantity.innerText = count;
+    total.innerText = (itemPrice * count).toLocaleString();
+}
+
+/* ===== PLUS BUTTON ===== */
+plusButton.addEventListener("click", function () {
+    count++;
+    updateCart();
+});
+
+/* ===== MINUS BUTTON ===== */
+minusButton.addEventListener("click", function () {
+    if (count > 1) {
+        count--;
+        updateCart();
+    }
+});
+</script>
+ -->
+<script src="site.js"></script>
+</body>
+</html>
