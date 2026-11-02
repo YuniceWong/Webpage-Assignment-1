@@ -522,7 +522,6 @@ video{
   position: relative;
   min-height: 695px;
   overflow: hidden;
-  background:;
   color:var(--black);
   text-align: center;
   padding: 6px 40px 30px;
@@ -719,7 +718,7 @@ video{
   .coords p {
     font-size: 36px;
   }
-}
+
 
 .about-layout {
   min-height: 100vh;
@@ -1165,7 +1164,7 @@ li.Collection ul.dropdown-menu li{
 	margin-bottom: 25px;
 }
 
-/
+
 /* ===== CENTER WRAPPER ===== */
 .cart-wrapper {
     max-width: 1000px;
@@ -1363,6 +1362,7 @@ div.productmen th{
 div.productmen h2{
   position:absolute;
   top:190%;
+  top:210%;
   left:17%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
@@ -1372,6 +1372,7 @@ div.productmen h2{
 div.productmen h3{
   position:absolute;
   top:200%;
+  top:220%;
   left:19%;
   transform:translate(-50%,-50%);
   color:var(--lightbeige);
