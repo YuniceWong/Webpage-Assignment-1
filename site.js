@@ -13,7 +13,7 @@ $(document).ready(function(){//when document is ready(fully loaded), run functio
 		$(this).toggleClass('active');
 
 	}); 
-
+	
 
   $('div.america').hover(function(){
     $('.america-img').attr('src','img/Americanhover.png');
